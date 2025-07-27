@@ -182,6 +182,15 @@
             menu.classList.toggle("p-5");
             menu.classList.toggle("gap-5");
         });
-    </script>  
+
+        menu.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                if (window.innerWidth < 768) {
+                menu.classList.add("hidden");
+                menu.classList.remove("flex", "flex-col", "absolute", "top-25", "left-0", "w-full", "bg-white", "z-30", "p-5", "gap-5");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
