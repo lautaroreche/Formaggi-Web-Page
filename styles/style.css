@@ -1,0 +1,16 @@
+:root {
+    --main-color: #ffd230;
+    --soft-main-color: #7bc1b7;
+    --light-color: #f9f9ff;
+    --dark-color: #1a1a1a;
+}
+
+html { scroll-behavior: smooth; }
+body {
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+a { text-decoration: none; }
+ul { list-style: none; }
