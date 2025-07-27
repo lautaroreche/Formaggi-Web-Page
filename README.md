@@ -1,7 +1,7 @@
 # Formaggi - Web page 🌐  
 
 ## Description ℹ️
-This repository contains the code for a **web page built with HTML and CSS**.
+This repository contains the code for a **web page built with HTML and Tailwind CSS**.
 
 ## Features ✨  
 - Clean and modern design.
