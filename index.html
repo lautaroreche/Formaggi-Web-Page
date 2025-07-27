@@ -19,9 +19,11 @@
 <body class="mx-5">
     <header class="py-4">
         <nav class="flex justify-between items-center mx-5">
-            <img src="images/logo.png" alt="Formaggi Logo" class="w-20" />
+            <a href="/">
+                <img src="images/logo.png" alt="Formaggi Logo" class="w-20" />
+            </a>
             <button id="menu-toggle" class="md:hidden text-black text-3xl">
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars cursor-pointer hover:text-yellow-500"></i>
             </button>
             <ul id="menu" class="hidden md:flex gap-8 items-center text-black">
                 <li><a href="#home-section" class="hover:text-yellow-400">HOME</a></li>
@@ -38,9 +40,9 @@
     <section id="home-section" class="relative h-[700px]">
         <div class="absolute inset-0 bg-gradient-to-r from-black to-black opacity-40 z-10"></div>
         <div class="absolute inset-0 bg-[url('/images/hero-background.webp')] bg-cover -z-10"></div>
-        <div class="p-15 relative z-20 text-white max-w-[600px] space-y-8">
-            <h1 class="text-5xl">FORMAGGI PIZZERIA <br> DA ASPORTO</h1>
-            <p class="text-2xl">TRADITIONAL ITALIAN PIZZA</p>
+        <div class="p-10 md:p-15 relative z-20 text-white max-w-[600px]">
+            <h1 class="text-5xl mb-4">FORMAGGI PIZZERIA <br> DA ASPORTO</h1>
+            <p class="text-2xl mb-8">TRADITIONAL ITALIAN PIZZA</p>
             <a href="#contact-section" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500">ORDER NOW</a>
         </div>
     </section>
@@ -48,84 +50,82 @@
         <div class="relative flex-[6]">
             <div class="absolute inset-0 bg-gradient-to-r from-black to-black opacity-40 z-10"></div>
             <div class="absolute inset-0 bg-[url('/images/background-2.webp')] bg-cover -z-10"></div>
-            <div class="p-15 relative z-20 text-white space-y-8">
-                <h2 class="text-3xl md:text-4xl">BEST PIZZA <br> IN THE CITY</h2>
+            <div class="p-10 md:p-15 relative z-20 text-white">
+                <h2 class="mb-8 text-3xl md:text-4xl">BEST PIZZA <br> IN THE CITY</h2>
                 <a href="#menu-section" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500">SEE MENU</a>
             </div>
         </div>
         <div class="relative flex-[4]">
             <div class="absolute inset-0 bg-gradient-to-r from-black to-black opacity-40 z-10"></div>
             <div class="absolute inset-0 bg-[url('/images/background-3.webp')] bg-cover -z-10"></div>
-            <div class="p-15 relative z-20 text-white space-y-8">
-                <h2 class="text-3xl md:text-4xl">SLICES FROM <br> ONLY €1</h2>
-                <a href="#contact-section" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500">ORDER NOW</a>
+            <div class="p-10 md:p-15 relative z-20 text-white">
+                <h2 class="mb-8 text-3xl md:text-4xl">SLICES FROM <br> ONLY €1</h2>
+                <a href="#contact-section" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500">I WANT ONE</a>
             </div>
         </div>
     </section>
     <main id="menu-section" class="mt-5 relative">
-        <div class="absolute inset-0 bg-gradient-to-r from-black to-black opacity-50 z-10"></div>
-        <div class="absolute inset-0 bg-[url('/images/background-4.webp')] bg-cover -z-10"></div>
-        <div class="p-15 relative z-20 text-white">
-            <h2 class="mb-10 text-4xl text-center">OUR MENU</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="p-10 max-w-[400px] space-y-8 mx-auto">
-                    <h3 class="text-2xl">MARGHERITA | €1</h3>
-                    <p>Tomato sauce, fresh mozzarella, basil leaves, extra virgin olive oil, and a touch of sea salt. A simple and timeless italian classic</p>
+        <div class="absolute inset-0 bg-gradient-to-r from-black to-black opacity-70 md:opacity-60 z-10"></div>
+        <div class="absolute inset-0 bg-gray-950 bg-[url('/images/background-4.2.webp')] md:bg-[url('/images/background-4.1.webp')] bg-cover -z-10"></div>
+        <div class="p-10 md:p-15 relative z-20 text-white">
+            <h2 class="mb-8 text-4xl text-center">OUR MENU</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-5 max-w-[400px] md:mx-auto">
+                    <h3 class="mb-4 text-2xl">MARGHERITA  |  €1</h3>
+                    <p class="mb-8 italic">Tomato sauce, fresh mozzarella, basil leaves, extra virgin olive oil, and a touch of sea salt. A simple and timeless italian classic</p>
                     <a href="#contact-section" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500">ORDER</a>
                 </div>
-                <div class="p-10 max-w-[400px] space-y-8 mx-auto">
-                    <h3 class="text-2xl">DIAVOLA | €2</h3>
-                    <p>Tomato sauce, mozzarella, spicy salami, chili flakes, and a drizzle of olive oil. Bold and fiery flavors for those who like to feel the heat</p>
+                <div class="p-5 max-w-[400px] md:mx-auto">
+                    <h3 class="mb-4 text-2xl">DIAVOLA  |  €2</h3>
+                    <p class="mb-8 italic">Tomato sauce, mozzarella, spicy salami, chili flakes, and a drizzle of olive oil. Bold and fiery flavors for those who like to feel the heat</p>
                     <a href="#contact-section" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500">ORDER</a>
                 </div>
-                <div class="p-10 max-w-[400px] space-y-8 mx-auto">
-                    <h3 class="text-2xl">BRESAOLA | €2</h3>
-                    <p>Tomato sauce, mozzarella, cured bresaola beef, fresh arugula, shaved Parmesan, and olive oil. Light, elegant, and full of savory flavor</p>
+                <div class="p-5 max-w-[400px] md:mx-auto">
+                    <h3 class="mb-4 text-2xl">BRESAOLA  |  €2</h3>
+                    <p class="mb-8 italic">Tomato sauce, mozzarella, cured bresaola beef, fresh arugula, shaved Parmesan, and olive oil. Light, elegant, and full of savory flavor</p>
                     <a href="#contact-section" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500">ORDER</a>
                 </div>
-                <div class="p-10 max-w-[400px] space-y-8 mx-auto">
-                    <h3 class="text-2xl">FORMAGGI | €3</h3>
-                    <p>Mozzarella, gorgonzola, fontina, and Parmesan melted together with cream. A rich, cheesy blend for true cheese lovers</p>
+                <div class="p-5 max-w-[400px] md:mx-auto">
+                    <h3 class="mb-4 text-2xl">FORMAGGI  |  €3</h3>
+                    <p class="mb-8 italic">Mozzarella, gorgonzola, fontina, and Parmesan melted together with cream. A rich, cheesy blend for true cheese lovers</p>
                     <a href="#contact-section" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500">ORDER</a>
                 </div>
-                <div class="p-10 max-w-[400px] space-y-8 mx-auto">
-                    <h3 class="text-2xl">TIROLESE | €3</h3>
-                    <p>Tomato sauce, mozzarella, speck (smoked prosciutto), mushrooms, and a drizzle of olive oil. Smoky, rich and satisfying alpine-style flavor</p>
+                <div class="p-5 max-w-[400px] md:mx-auto">
+                    <h3 class="mb-4 text-2xl">TIROLESE  |  €3</h3>
+                    <p class="mb-8 italic">Tomato sauce, mozzarella, speck (smoked prosciutto), mushrooms, and a drizzle of olive oil. Smoky, rich and satisfying alpine-style flavor</p>
                     <a href="#contact-section" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500">ORDER</a>
                 </div>
-                <div class="p-10 max-w-[400px] space-y-8 mx-auto">
-                    <h3 class="text-2xl">PATAPIZZA | €2</h3>
-                    <p>Tomato sauce, mozzarella, crispy potato slices, rosemary, and olive oil. A rustic and comforting twist with crispy golden potatoes</p>
+                <div class="p-5 max-w-[400px] md:mx-auto">
+                    <h3 class="mb-4 text-2xl">PATAPIZZA  |  €2</h3>
+                    <p class="mb-8 italic">Tomato sauce, mozzarella, crispy potato slices, rosemary, and olive oil. A rustic and comforting twist with crispy golden potatoes</p>
                     <a href="#contact-section" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500">ORDER</a>
                 </div>
-                <div class="p-10 max-w-[400px] space-y-8 mx-auto">
-                    <h3 class="text-2xl">CAPRESE | €3</h3>
-                    <p>Sliced fresh tomato, mozzarella, basil, oregano, olive oil, and a touch of balsamic glaze. A pizza inspired by the famous Italian salad</p>
+                <div class="p-5 max-w-[400px] md:mx-auto">
+                    <h3 class="mb-4 text-2xl">CAPRESE  |  €3</h3>
+                    <p class="mb-8 italic">Sliced fresh tomato, mozzarella, basil, oregano, olive oil, and a touch of balsamic glaze. A pizza inspired by the famous Italian salad</p>
                     <a href="#contact-section" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500">ORDER</a>
                 </div>
-                <div class="p-10 max-w-[400px] space-y-8 mx-auto">
-                    <h3 class="text-2xl">NAPOLETANA | €2</h3>
-                    <p>Tomato sauce, mozzarella, anchovies, capers, black olives, oregano, and olive oil. A bold, salty Southern Italian flavor combination</p>
+                <div class="p-5 max-w-[400px] md:mx-auto">
+                    <h3 class="mb-4 text-2xl">NAPOLETANA  |  €2</h3>
+                    <p class="mb-8 italic">Tomato sauce, mozzarella, anchovies, capers, black olives, oregano, and olive oil. A bold, salty Southern Italian flavor combination</p>
                     <a href="#contact-section" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500">ORDER</a>
                 </div>
             </div>
         </div>
     </main>
-    <section class="mt-5 h-40 relative">
-        <div class="absolute inset-0 bg-gradient-to-r from-black to-black opacity-70 z-10"></div>
+    <section class="mt-5 h-30 relative">
+        <div class="absolute inset-0 bg-gradient-to-r from-black to-black opacity-50 z-10"></div>
         <div class="absolute inset-0 bg-[url('/images/background-5.webp')] bg-cover -z-10"></div>
-        <div class="absolute inset-0 flex items-center justify-center z-20">
-            <p class="text-3xl text-yellow-400 text-center">ITALIAN STYLE PIZZA</p>
-        </div>
+        <div class="absolute inset-0 flex items-center justify-center z-20"></div>
     </section>
-    <footer id="contact-section" class="flex flex-col md:flex-row md:justify-around gap-10 my-5 p-10 bg-gray-900 text-white text-left md:text-center">
+    <footer id="contact-section" class="flex flex-col md:flex-row md:justify-around gap-10 my-5 p-10 bg-gray-950 text-white text-left md:text-center">
         <div class="space-y-4 text-left">
             <a href="/">
                 <img src="images/logo.png" alt="Formaggi Logo" class="w-20"/>
             </a>
             <div>
                 <h2>FORMAGGI PIZZERIA DA ASPORTO</p>
-                <p class="text-xs">© <span id="year"></span> Formaggi Pizzeria. All rights reserved.</p>
+                <p class="text-xs">© <span id="year"></span>. All rights reserved.</p>
             </div>
             <div class="space-y-1">
                 <p>Via Roma 123, Milano, Italy</p>
@@ -154,9 +154,9 @@
         <div class="space-y-4">
             <h4 class="text-yellow-400 font-semibold">Follow us</h4>
             <div class="flex gap-5 text-xl">
-                <i class="fab fa-facebook-f hover:text-yellow-400 transition"></i>
-                <i class="fab fa-instagram hover:text-yellow-400 transition"></i>
-                <i class="fab fa-x-twitter hover:text-yellow-400 transition"></i>
+                <i class="fab fa-facebook-f cursor-pointer hover:text-yellow-400 transition"></i>
+                <i class="fab fa-instagram cursor-pointer hover:text-yellow-400 transition"></i>
+                <i class="fab fa-x-twitter cursor-pointer hover:text-yellow-400 transition"></i>
             </div>
         </div>
     </footer>
