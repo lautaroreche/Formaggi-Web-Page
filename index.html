@@ -60,6 +60,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
+
 <body class="mx-5">
     <div id="loader">
         <div class="spinner"></div>
@@ -74,33 +76,35 @@
                 <img src="images/logo.png" alt="Formaggi Logo" class="w-20 hover:rotate-5 transition-transform duration-500"/>
             </a>
             <ul id="menu" class="hidden md:flex gap-8 items-center text-black">
-                <li><a href="#home" class="hover:text-yellow-400 duration-500 ease-out">HOME</a></li>
-                <li><a href="#menu" class="hover:text-yellow-400 duration-500 ease-out">MENU</a></li>
-                <li><a href="#contact" class="hover:text-yellow-400 duration-500 ease-out">CONTACT</a></li>
+                <li><a href="#" onclick="scrollToSection('home'); return false;" class="hover:text-yellow-400 duration-500 ease-out">HOME</a></li>
+                <li><a href="#" onclick="scrollToSection('menu'); return false;" class="hover:text-yellow-400 duration-500 ease-out">MENU</a></li>
+                <li><a href="#" onclick="scrollToSection('contact'); return false;" class="hover:text-yellow-400 duration-500 ease-out">CONTACT</a></li>
                 <li>
-                    <a href="#contact" class="inline-block px-4 py-2 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">
+                    <a href="#" onclick="scrollToSection('contact'); return false;" class="inline-block px-4 py-2 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">
                         ORDER NOW
                     </a>
                 </li>
-            </ul>
+            </ul>            
         </nav>
-    </header>      
+    </header>
+
     <section id="home" class="relative h-[700px]">
         <div class="absolute inset-0 bg-gradient-to-r from-black to-black opacity-40 z-10"></div>
         <img src="/images/hero-background.webp" alt="" class="absolute inset-0 w-full h-full object-cover -z-10" aria-hidden="true">
         <div class="p-10 md:p-15 relative z-20 text-white max-w-[600px]">
             <h1 class="text-5xl mb-4 scroll-fade opacity-0 translate-y-8 transition-all duration-500 ease-out">FORMAGGI PIZZERIA <br> DA ASPORTO</h1>
             <p class="text-2xl mb-8 scroll-fade opacity-0 translate-y-8 transition-all duration-500 ease-out">TRADITIONAL ITALIAN PIZZA</p>
-            <a href="#contact" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">ORDER NOW</a>
+            <a href="#" onclick="scrollToSection('contact'); return false;" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">ORDER NOW</a>
         </div>
     </section>
+
     <section class="mt-5 flex flex-col md:flex-row h-[500px] gap-5">
         <div class="relative flex-[6]">
             <div class="absolute inset-0 bg-gradient-to-r from-black to-black opacity-40 z-10"></div>
             <img src="/images/background-2.webp" alt="" class="absolute inset-0 w-full h-full object-cover -z-10" aria-hidden="true">
             <div class="p-10 md:p-15 relative z-20 text-white">
                 <h2 class="mb-8 text-3xl md:text-4xl scroll-fade opacity-0 translate-y-8 transition-all duration-500 ease-out">BEST PIZZA <br> IN THE CITY</h2>
-                <a href="#menu" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">SEE MENU</a>
+                <a href="#" onclick="scrollToSection('menu'); return false;" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">SEE MENU</a>
             </div>
         </div>
         <div class="relative flex-[4]">
@@ -108,10 +112,11 @@
             <img src="/images/background-3.webp" alt="" class="absolute inset-0 w-full h-full object-cover -z-10" aria-hidden="true">
             <div class="p-10 md:p-15 relative z-20 text-white">
                 <h2 class="mb-8 text-3xl md:text-4xl scroll-fade opacity-0 translate-y-8 transition-all duration-500 ease-out">SLICES FROM <br> ONLY €1</h2>
-                <a href="#contact" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">I WANT ONE</a>
+                <a href="#" onclick="scrollToSection('contact'); return false;" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">I WANT ONE</a>
             </div>
         </div>
     </section>
+
     <main id="menu" class="mt-5 relative">
         <div class="absolute inset-0 bg-gradient-to-r from-black to-black opacity-70 md:opacity-60 z-10"></div>
         <img src="/images/background-4.webp" alt="" class="absolute inset-0 w-full h-full object-cover -z-10" aria-hidden="true">
@@ -121,46 +126,47 @@
                 <div class="p-5 max-w-[400px] md:mx-auto">
                     <h3 class="mb-3 text-2xl">MARGHERITA | € 1</h3>
                     <p class="mb-8 italic">Tomato sauce, fresh mozzarella, basil leaves, extra virgin olive oil, and a touch of sea salt. A simple and timeless italian classic</p>
-                    <a href="#contact" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">ORDER</a>
+                    <a href="#" onclick="scrollToSection('contact'); return false;" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">ORDER</a>
                 </div>
                 <div class="p-5 max-w-[400px] md:mx-auto">
                     <h3 class="mb-3 text-2xl">DIAVOLA | € 2</h3>
                     <p class="mb-8 italic">Tomato sauce, mozzarella, spicy salami, chili flakes, and a drizzle of olive oil. Bold and fiery flavors for those who like to feel the heat</p>
-                    <a href="#contact" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">ORDER</a>
+                    <a href="#" onclick="scrollToSection('contact'); return false;" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">ORDER</a>
                 </div>
                 <div class="p-5 max-w-[400px] md:mx-auto">
                     <h3 class="mb-3 text-2xl">BRESAOLA | € 2</h3>
                     <p class="mb-8 italic">Tomato sauce, mozzarella, cured bresaola beef, fresh arugula, shaved Parmesan, and olive oil. Light, elegant, and full of savory flavor</p>
-                    <a href="#contact" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">ORDER</a>
+                    <a href="#" onclick="scrollToSection('contact'); return false;" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">ORDER</a>
                 </div>
                 <div class="p-5 max-w-[400px] md:mx-auto">
                     <h3 class="mb-3 text-2xl">FORMAGGI | € 3</h3>
                     <p class="mb-8 italic">Mozzarella, gorgonzola, fontina, and Parmesan melted together with cream. A rich, cheesy blend for true cheese lovers</p>
-                    <a href="#contact" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">ORDER</a>
+                    <a href="#" onclick="scrollToSection('contact'); return false;" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">ORDER</a>
                 </div>
                 <div class="p-5 max-w-[400px] md:mx-auto">
                     <h3 class="mb-3 text-2xl">TIROLESE | € 3</h3>
                     <p class="mb-8 italic">Tomato sauce, mozzarella, speck (smoked prosciutto), mushrooms, and a drizzle of olive oil. Smoky, rich and satisfying alpine-style flavor</p>
-                    <a href="#contact" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">ORDER</a>
+                    <a href="#" onclick="scrollToSection('contact'); return false;" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">ORDER</a>
                 </div>
                 <div class="p-5 max-w-[400px] md:mx-auto">
                     <h3 class="mb-3 text-2xl">PATAPIZZA | € 2</h3>
                     <p class="mb-8 italic">Tomato sauce, mozzarella, crispy potato slices, rosemary, and olive oil. A rustic and comforting twist with crispy golden potatoes</p>
-                    <a href="#contact" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">ORDER</a>
+                    <a href="#" onclick="scrollToSection('contact'); return false;" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">ORDER</a>
                 </div>
                 <div class="p-5 max-w-[400px] md:mx-auto">
                     <h3 class="mb-3 text-2xl">CAPRESE | € 3</h3>
                     <p class="mb-8 italic">Sliced fresh tomato, mozzarella, basil, oregano, olive oil, and a touch of balsamic glaze. A pizza inspired by the famous Italian salad</p>
-                    <a href="#contact" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">ORDER</a>
+                    <a href="#" onclick="scrollToSection('contact'); return false;" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">ORDER</a>
                 </div>
                 <div class="p-5 max-w-[400px] md:mx-auto">
                     <h3 class="mb-3 text-2xl">NAPOLETANA | € 2</h3>
                     <p class="mb-8 italic">Tomato sauce, mozzarella, anchovies, capers, black olives, oregano, and olive oil. A bold, salty Southern Italian flavor combination</p>
-                    <a href="#contact" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">ORDER</a>
+                    <a href="#" onclick="scrollToSection('contact'); return false;" class="px-8 py-4 bg-yellow-400 text-black hover:bg-yellow-500 duration-500 ease-out">ORDER</a>
                 </div>
             </div>
         </div>
     </main>
+
     <section class="mt-5 h-30 relative">
         <div class="absolute inset-0 bg-gradient-to-r from-black to-black opacity-50 z-10"></div>
         <img src="/images/background-5.webp" alt="" class="absolute inset-0 w-full h-full object-cover -z-10" aria-hidden="true">
@@ -168,6 +174,7 @@
             ITALIAN STYLE PIZZA
         </div>
     </section>
+
     <footer id="contact" class="flex flex-col md:flex-row md:justify-around gap-10 my-5 p-10 bg-gray-950 text-white text-left md:text-center">
         <div class="space-y-4 text-left">
             <a href="/">
@@ -183,16 +190,14 @@
                 <p>Email: formaggi@email.com</p>
             </div>
         </div>
-
         <div class="space-y-4">
             <p class="text-yellow-400 font-semibold text-lg">Menu</p>
             <ul class="space-y-1">
-                <li><a href="#home" class="hover:text-yellow-400 duration-500 ease-out">Home</a></li>
-                <li><a href="#menu" class="hover:text-yellow-400 duration-500 ease-out">Menu</a></li>
-                <li><a href="#contact" class="hover:text-yellow-400 duration-500 ease-out">Contact</a></li>
-            </ul>
+                <li><a href="#" onclick="scrollToSection('home'); return false;" class="hover:text-yellow-400 duration-500 ease-out">Home</a></li>
+                <li><a href="#" onclick="scrollToSection('menu'); return false;" class="hover:text-yellow-400 duration-500 ease-out">Menu</a></li>
+                <li><a href="#" onclick="scrollToSection('contact'); return false;" class="hover:text-yellow-400 duration-500 ease-out">Contact</a></li>
+            </ul>            
         </div>
-
         <div class="space-y-4">
             <p class="text-yellow-400 font-semibold text-lg">Opening Hours</p>
             <div class="space-y-1">
@@ -200,7 +205,6 @@
                 <p>Sat - Sun: 11:00 to 01:00</p>
             </div>
         </div>
-
         <div class="space-y-4">
             <p class="text-yellow-400 font-semibold text-lg">Follow us</p>
             <div class="flex gap-5 text-xl">
@@ -211,6 +215,7 @@
         </div>
     </footer>
 
+    
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
@@ -271,6 +276,16 @@
                     document.body.classList.remove("loading");
             }, 300);
         });
+    </script>
+
+    <script>
+        function scrollToSection(id) {
+            const target = document.getElementById(id);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+                history.replaceState(null, '', location.pathname);
+            }
+        }
     </script>
 </body>
 </html>
