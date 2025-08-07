@@ -36,4 +36,4 @@ Pipfile.lock
 .idea/
 
 # Tailwind CSS and Node
-styles/input.css
+input.css
