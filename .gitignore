@@ -6,7 +6,6 @@ env/
 __pycache__/
 
 # Local configuration
-.env
 *.env
 *.sqlite3
 config/settings_local.py
@@ -36,5 +35,5 @@ Pipfile.lock
 .vscode/
 .idea/
 
-# Tailwind CSS
-input.css
+# Tailwind CSS and Node
+styles/input.css
